@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+  </head>
+
+  <body>
+    <h1>Hello Plunker!</h1>
+Макрос замена заменяет цвет всего текста на сранице на голубой
+Макрос втавка неогранич. вставляет в поле ссылку на урок по макросам, работает на всех листах
+Макрос вставка неогранич. вставляет текст на первом листе
+
+
+
+
+    Sub МакросЗамена()<br>
+'<br>
+' МакросЗамена Макрос<br>
+'<br>
+' Сочетание клавиш: Ctrl+ц<br>
+'<br>
+    With Selection.Font<br>
+        .ThemeColor = xlThemeColorAccent1<br>
+        .TintAndShade = -0.249977111117893<br>
+    End With<br>
+    Cells.Select<br>
+    Range("A2").Activate<br>
+    With Selection.Font<br>
+        .Color = -1003520<br>
+        .TintAndShade = 0<br>
+    End With<br>
+    With Selection.Font<br>
+        .Color = -1003520<br>
+        .TintAndShade = 0<br>
+    End With<br>
+End Sub<br>
+Sub МакросВставкаНеогранич()<br>
+'<br>
+' МакросВставкаНеогранич Макрос<br>
+'<br>
+' Сочетание клавиш: Ctrl+ч<br>
+'<br>
+    ActiveCell.FormulaR1C1 = _<br>
+        "https://www.youtube.com/watch?time_continue=6&v=g1l61o1CTwI"<br>
+    Range("F17").Select<br>
+End Sub<br>
+Sub МакросВставкаОгранич()<br>
+'<br>
+' МакросВставкаОгранич Макрос<br>
+'<br>
+' Сочетание клавиш: Ctrl+ы<br>
+'<br>
+If Worksheets(ActiveSheet.Name).Name = "Лист1" Then<br>
+    ActiveCell.FormulaR1C1 = _<br>
+        "If Worksheets(ActiveSheet.Name).Name = ""Лист1"" Then (МАКРОС) End if"<br>
+  End If<br>
+End Sub<br>
+  </body><br>
+</html><br>
