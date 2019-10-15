@@ -1,0 +1,39 @@
+<html><br>
+<head><br>
+<meta http-equiv="Content-Type"<br>
+content="text/html; charset=windows-1251"><br>
+<title>Стили</title><br>
+<style> p {background-color: #fff;<br>
+        margin: 20px auto;<br>
+        font-family: Arial;<br>
+        font-size: 2em; <br>
+        text-transform: uppercase;<br>
+        color: rgba(0,168,255,0.5);<br>
+        text-shadow: 8px 8px 0 rgba(255,0,180,0.5);}<br>
+</style><br>
+<script><br>
+function er(){<br>
+document.getElementById("out1").value="1/x^2";<br>
+document.getElementById("out2").value="a/(b*c)";<br>
+document.getElementById("o3").value="a*c/b";<br>
+<br>
+}<br>
+</script><br>
+</head><br>
+<body><br>
+<button onclick="er()">1.15</button><br>
+<br>
+<br>
+А)<input type="text" value="а" id="out1"><br>
+<br>
+<br>
+Б)<input type="text" value="б" id="out2"><br>
+<br>
+<br>
+В)<input type="text" value="в" id="o3"><br>
+<br>
+<br>
+<input type="text" value="г" id="o4"><br>
+<br>
+</body><br>
+</html><br>
